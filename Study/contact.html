@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Напишите нам</title>
+        <style>
+       #map {
+        height: 300px;
+        width: 100%;
+       }
+    </style>
+</head>
+<hr/>
+
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+    </ul>
+    <h1>Напишите нам</h1>
+    <form action="#">
+        <br>Ваше имя
+        <input type="text" placeholder="Ваше Имя">
+        <br> 
+        <input type="text" placeholder="email">
+        <br> 
+        <input type="text" placeholder="Тема">
+        <textarea cols="70" rows="5"></textarea>
+        <br>
+        <input type="submit" value="Отправить данные">
+        <input type="reset" value="Отмена"> </form>
+    <br>
+      <ul> <h1>Адрес</h1>
+         <li>Контактный номер телефона интернет-магазина : 8-(800)-88******</li>
+         <li>Адрес : Россия г.Иркутск</li>
+         <li>Email : email@email.ru</li>
+         <li><a href="index.html">Сайт магазина</a></li>
+      </ul>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2902.0874127223747!2d104.27994506985485!3d52.29141261207656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1515755701543" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
+        <h3>Google Maps</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 52.29, lng: 104.28};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDix8wSqdBMmwLOW-8r7RdUTwXPYy1J9I&callback=initMap">
+    </script>
+        
+    <br>
+    <hr/>    <footer>&laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a></footer>
+    </body>
+
+</html>
