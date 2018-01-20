@@ -68,23 +68,13 @@ a {
     background-color:blanchedalmond;
     font-style: oblique;
 }
-.border_c {
-    background-color: blue;
-    height: 260px;
-    width: 260px
-}
 
-.border_w {
-    background-color: blue;
-    height: 473px;
-    width: 455px
-}
 .border {
     background-color: blue;
     height: 363px;
     width: 262px
 }
 .img {
-    outline: 4px solid ffcc66;
-    padding: 6px 0px 0px 6px;
+    outline: 4px solid #909090;
+    padding: 8px 0px 0px 8px;
 }
