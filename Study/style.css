@@ -1,0 +1,90 @@
+body {
+    background-color: #f8f8f8;
+}
+
+h1, h2 {
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+.h2 {
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.catalog {
+    background-color: #eaeaea; 
+}
+
+.menu li {
+    font-style: italic;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.menu li a {
+    list-style-type: none;
+    color: #8B00FF;
+}
+h2,a {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+a {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.spec li{
+    color: dimgrey;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    list-style-type: katakana-iroha;
+}
+.namein {
+    color: orangered;
+    background-color:blanchedalmond;
+    margin: 0px 15px 7px 70px;
+    height: 20px;
+    width: 300px;
+    font-style: oblique;
+}
+.arin {
+    color: orangered;
+    background-color:blanchedalmond;
+    font-style: oblique;
+}
+.border_c {
+    background-color: blue;
+    height: 260px;
+    width: 260px
+}
+
+.border_w {
+    background-color: blue;
+    height: 473px;
+    width: 455px
+}
+.border {
+    background-color: blue;
+    height: 363px;
+    width: 262px
+}
+.img {
+    outline: 4px solid ffcc66;
+    padding: 6px 0px 0px 6px;
+}
