@@ -17,6 +17,9 @@ h1, h2 {
     background-color: #eaeaea; 
 }
 
+.img:hover {
+    outline-style: none;
+}
 .menu li a:hover {
     color: #efa53e;
 }
