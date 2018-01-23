@@ -2,13 +2,11 @@ body {
     background-color: #f8f8f8;
 }
 
-h1, h2 {
-    color: black;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 400;
+.table {
+    text-align: center;
 }
-.h2 {
+
+h1, h2 {
     color: black;
     font-style: italic;
     font-size: 18px;
@@ -17,6 +15,19 @@ h1, h2 {
 
 .catalog {
     background-color: #eaeaea; 
+}
+
+.menu li a:hover {
+    color: #efa53e;
+}
+
+.menu li a:active {
+color: red;
+}
+
+.menu .new:after {
+content: " new - в разработке";
+color: #ff305d;
 }
 
 .menu li {
@@ -29,10 +40,10 @@ h1, h2 {
     list-style-type: none;
     color: #8B00FF;
 }
-h2,a {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
+
+p:first-letter {
+    color: firebrick;
+    font-size: 20px;
 }
 
 p {
@@ -41,21 +52,50 @@ p {
     font-style: italic;
     line-height: 16px;
 }
+
 a {
-    color: #484343;
+    color: #990000;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+ul {
+    list-style: none;
+}
+
+table { /*Внешняя граница таблицы*/
+    border: 1px solid #000;
+    width: 450px;
+    height: 220px;
+}
+
+td { /*Границы для ячеек таблицы*/
+    border: 1px solid grey;
+}
+
+.col3 {
+    width: 30px;
+    text-align: center
 }
 .spec li{
     color: dimgrey;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    list-style-type: katakana-iroha;
+    list-style: none;
+    background: url(img/marker_purple.png) no-repeat;
+    padding-left: 24px;
+/*    list-style-image: url(img/marker_purple.png);*/
+    border-radius: 7px;
+    box-shadow: rgba(0,0,0,5.2) 0px 1px 3px;
 }
-.namein {
+.form_c input:first-letter{
+    font-size: 20px;
+}
+
+.form_c input {
+    text-transform: capitalize;  
     color: orangered;
     background-color:blanchedalmond;
     margin: 0px 15px 7px 70px;
@@ -69,12 +109,8 @@ a {
     font-style: oblique;
 }
 
-.border {
-    background-color: blue;
-    height: 363px;
-    width: 262px
-}
 .img {
     outline: 4px solid #909090;
+    outline-style: outset;
     padding: 8px 0px 0px 8px;
 }

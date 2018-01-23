@@ -15,16 +15,18 @@
 <hr/>
 
 <body>
+   <div class="header"><img src="img/logo.png" alt="logo">
     <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
+        <li class="new"><a href="#">Новинки</a></li>
         <li><a href="contact.html">Контакты</a></li>
-    </ul>
+    </ul></div>
     <h1>Напишите нам</h1>
-    <form action="#">
-        <br><input class="namein" type="text" placeholder="Ваше Имя"><label>Ваше Имя</label>
-        <br><input class="namein" type="text" placeholder="email"><label>email</label>
-        <br><input class="namein" type="text"  placeholder="Тема"><label>Тема</label>
+    <form class="form_c" action="#">
+        <br><input type="text" placeholder="Ваше Имя" id="name"><label for="name">Ваше Имя</label>
+        <br><input type="text" placeholder="email" id="email"><label for="email">email</label>
+        <br><input type="text"  placeholder="Тема" id="tema"><label for="tema">Тема</label>
         <br>
         <textarea class="arin" cols="70" rows="5"></textarea>
         <br>
@@ -37,7 +39,6 @@
          <li>Email : email@email.ru</li>
          <li><a href="index.html">Сайт магазина</a></li>
       </ul>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2902.0874127223747!2d104.27994506985485!3d52.29141261207656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1515755701543" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
         <h3>Google Maps</h3>
     <div id="map"></div>
     <script>
@@ -58,7 +59,10 @@
     </script>
         
     <br>
-    <hr/>    <footer>&laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a></footer>
+    <hr/>    
+    <div class="footer">
+        &laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a>
+    </div>
     </body>
 
 </html>
