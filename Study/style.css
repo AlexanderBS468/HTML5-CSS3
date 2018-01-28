@@ -2,8 +2,38 @@ body {
     background-color: #f8f8f8;
 }
 
-.table {
-    text-align: center;
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+/*    display: flex;*/
+    background-color: #101018;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: #E1E0E1;
+    height: 1200px;
+}
+
+.footer {
+    background-color: #474747;
+    height: 80px;
+}
+
+.footer span {
+    margin: 25px 20px 0px 0px;
+    float: right;
+}
+#logo {
+    background-size: contain;
+    float: left;
+    width: auto;
+    height: 100px;
+    margin: 0px 50px;
 }
 
 h1, h2 {
@@ -20,6 +50,7 @@ h1, h2 {
 .img:hover {
     outline-style: none;
 }
+
 .menu li a:hover {
     color: #efa53e;
 }
@@ -28,20 +59,35 @@ h1, h2 {
 color: red;
 }
 
-.menu .new:after {
-content: " new - в разработке";
-color: #ff305d;
+.menu li {
+    background-color: #464646;
+    margin-top: 20px;
+    float: right;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #7f7f7f;
+    font-style: italic;
+    font-size: 18px;
+    list-style-type: none;
 }
 
-.menu li {
-    font-style: italic;
-    font-size: 20px;
-    list-style-type: none;
+.menu li ul {
+    display: none;
+}
+
+.menu li:hover ul {
+    color: red;
+    display: block;
 }
 
 .menu li a {
+    display: block;
+    width: 100%;
+    height: 76%;
     list-style-type: none;
-    color: #8B00FF;
+    color: #7B00FF;
+    padding-top: 12px;
+    padding-left: 12px;
 }
 
 p:first-letter {
@@ -56,7 +102,7 @@ p {
     line-height: 16px;
 }
 
-a {
+.footer a {
     color: #990000;
     font-size: 16px;
     font-weight: 400;
@@ -65,16 +111,6 @@ a {
 }
 ul {
     list-style: none;
-}
-
-table { /*Внешняя граница таблицы*/
-    border: 1px solid #000;
-    width: 450px;
-    height: 220px;
-}
-
-td { /*Границы для ячеек таблицы*/
-    border: 1px solid grey;
 }
 
 .col3 {
@@ -87,18 +123,15 @@ td { /*Границы для ячеек таблицы*/
     font-weight: 500;
     line-height: 18px;
     list-style: none;
-    background: url(img/marker_purple.png) no-repeat;
+/*    background: url(img/marker_purple.png) no-repeat;*/
     padding-left: 24px;
-/*    list-style-image: url(img/marker_purple.png);*/
+    list-style-image: url(img/marker_purple.png);
     border-radius: 7px;
     box-shadow: rgba(0,0,0,5.2) 0px 1px 3px;
 }
-.form_c input:first-letter{
-    font-size: 20px;
-}
 
 .form_c input {
-    text-transform: capitalize;  
+    text-transform: capitalize;
     color: orangered;
     background-color:blanchedalmond;
     margin: 0px 15px 7px 70px;
@@ -106,14 +139,51 @@ td { /*Границы для ячеек таблицы*/
     width: 300px;
     font-style: oblique;
 }
-.arin {
-    color: orangered;
+#email:focus {
+    background-color: cornflowerblue;
+}
+.form_c textarea{
+    text-transform: capitalize;
     background-color:blanchedalmond;
+    color: orangered;
     font-style: oblique;
 }
 
+.element {
+    float: left;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
 .img {
+    float: left;
     outline: 4px solid #909090;
     outline-style: outset;
     padding: 8px 0px 0px 8px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.buy a:hover {
+    color: #efa53e;
+}
+.buy a:active {
+    color: red;
+}
+.buy a {
+    position: relative;
+    display: block;
+    text-align: center;
+    float: right;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #7f7f7f;
+    font-style: italic;
+    font-size: 25px;
+    padding-top: 10px;
+
+}
+#map {
+    width: 100%;
+    height: 374px;
 }

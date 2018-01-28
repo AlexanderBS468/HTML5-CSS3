@@ -15,12 +15,16 @@
 <hr/>
 
 <body>
-   <div class="header"><img src="img/logo.png" alt="logo">
+    <div class="container">
+    <div class="header">
+    <img id="logo" src="img/logo.png" alt="logo">
+    <!-- Создание меню-->
     <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="new"><a href="#">Новинки</a></li>
         <li><a href="contact.html">Контакты</a></li>
+        <li class="new"><a href="#">Новинки</a>
+            <ul><li>в разработке</li></ul></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="index.html">Главная</a></li>       
     </ul></div>
     <h1>Напишите нам</h1>
     <form class="form_c" action="#">
@@ -28,7 +32,7 @@
         <br><input type="text" placeholder="email" id="email"><label for="email">email</label>
         <br><input type="text"  placeholder="Тема" id="tema"><label for="tema">Тема</label>
         <br>
-        <textarea class="arin" cols="70" rows="5"></textarea>
+        <textarea cols="70" rows="5"></textarea>
         <br>
         <input type="submit" value="Отправить данные">
         <input type="reset" value="Отмена"> </form>
@@ -40,8 +44,8 @@
          <li><a href="index.html">Сайт магазина</a></li>
       </ul>
         <h3>Google Maps</h3>
-    <div id="map"></div>
-    <script>
+    <div id="map">
+     <script>
       function initMap() {
         var uluru = {lat: 52.29, lng: 104.28};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -56,12 +60,12 @@
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDix8wSqdBMmwLOW-8r7RdUTwXPYy1J9I&callback=initMap">
-    </script>
-        
+    </script></div>
     <br>
-    <hr/>    
+    <hr/></div>
     <div class="footer">
-        &laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a>
+        <span>&laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a> 
+        <a href="index.html">Hi-Tech.Shop</a> </span>
     </div>
     </body>
 
