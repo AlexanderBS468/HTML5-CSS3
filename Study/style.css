@@ -16,24 +16,36 @@ body {
 
 .content {
     background-color: #E1E0E1;
-    height: 1200px;
 }
 
 .footer {
     background-color: #474747;
     height: 80px;
+    padding: 30px 50px 0px 0px;
+    text-align: right;
+    clear: both;
 }
 
-.footer span {
-    margin: 25px 20px 0px 0px;
-    float: right;
+.footer a {
+    color: #990000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
+
 #logo {
-    background-size: contain;
     float: left;
     width: auto;
     height: 100px;
     margin: 0px 50px;
+}
+
+ol li{
+    float: left;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
 }
 
 h1, h2 {
@@ -56,19 +68,22 @@ h1, h2 {
 }
 
 .menu li a:active {
-color: red;
+    color: red;
 }
 
-.menu li {
-    background-color: #464646;
-    margin-top: 20px;
+.menu {
     float: right;
+    margin-right: 10px;
+}
+.menu li {
+    float: left;
+    background-color: #464646;
+    margin-top: 10px;
     width: 100px;
     height: 50px;
     border: 1px solid #7f7f7f;
     font-style: italic;
     font-size: 18px;
-    list-style-type: none;
 }
 
 .menu li ul {
@@ -102,13 +117,6 @@ p {
     line-height: 16px;
 }
 
-.footer a {
-    color: #990000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
 ul {
     list-style: none;
 }
@@ -149,14 +157,9 @@ ul {
     font-style: oblique;
 }
 
-.element {
-    float: left;
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-}
-
 .img {
+    height: 180px;
+    width: auto;
     float: left;
     outline: 4px solid #909090;
     outline-style: outset;
@@ -171,10 +174,8 @@ ul {
     color: red;
 }
 .buy a {
-    position: relative;
-    display: block;
     text-align: center;
-    float: right;
+    float: left;
     width: 200px;
     height: 40px;
     border: 2px solid #7f7f7f;
