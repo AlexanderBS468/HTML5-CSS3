@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700');
-/*
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Bold.ttf);
-}
-*/
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: fff;
@@ -20,7 +15,7 @@ a {
     text-decoration: none;
 }
 .container_head {
-    width: 1366px;
+    max-width: 1366px;
     margin: 0 auto;
 }
 
@@ -55,11 +50,16 @@ a {
     padding: 0 13px;
 }
 .menu li a:hover {
+    font-size: 14px;
+    height: 30px;
+    border-bottom: 3px solid black;
+}
+
+.menu li a:active {
     color:  #212121;
     font-size: 14px;
     font-weight: 700;
     height: 30px;
-    border-bottom: 3px solid black;
 }
 
 .text {
@@ -149,14 +149,55 @@ p {
 .order_us:hover {
     background: url('../img/arrow.png') no-repeat 173px 17px;
 }
+.order_us:active {
+    background: #ffffff url(../img/arrow.png) no-repeat 173px 16px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1);
+}
 
 .navi {
     position: absolute;
     bottom: 19px;
-    width: 120px;
+    width: 160px;
     height: 40px;
     padding-left: 623px;
-    background: url(../img/active.png) no-repeat 663px 0px;
+}
+
+.navi .navi_center {
+    float: left;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+}
+
+.navi .navi_left {
+    float: left;
+    margin: 7px 15px 0px 15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #c6c6c6;
+}
+
+.navi .navi_right {
+    float: left;
+    margin: 7px 15px 0px 15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #c6c6c6;
+}
+
+.navi .navi_left:hover {
+    width: 25px;
+    height: 25px;
+    margin: 9px 17.5px 0px 17.5px;
+}
+
+.navi .navi_right:hover {
+    width: 25px;
+    height: 25px;
+    margin: 9px 17.5px 0px 17.5px;
 }
 
 content {
