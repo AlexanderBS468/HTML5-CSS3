@@ -39,6 +39,9 @@ a {
     float: left;
     list-style-type: none;
 }
+.menu .active {
+    font-weight: 700;
+}
 .menu li a {
     color:  #8c8c8c;
     text-shadow: 1px 0px 1px rgba(33, 33, 33, 0.4);
@@ -46,11 +49,13 @@ a {
     font-weight: 300;
     line-height: 30px;
     display: block;
+    text-align: center;
+    width: 110px;
     letter-spacing: 2px;
-    padding: 0 13px;
 }
 .menu li a:hover {
     font-size: 14px;
+    line-height: 30px;
     height: 30px;
     border-bottom: 3px solid black;
 }
@@ -260,9 +265,13 @@ content {
     letter-spacing: 4px;
     background: url('../img/arrow.png') no-repeat 190px 5px;
 }
-
 .explore a:hover {
-    background: url('') no-repeat 190px 5px;
+    color: #888;
+    text-shadow: 0px 0px 50px #111;
+}
+.explore a:active {
+    color: #cfcfcf;
+    text-shadow: 0px 0px 50px #111;
 }
 
 .tab_center {
@@ -291,7 +300,8 @@ content {
     -ms-transition: all 1s;  
     -o-transition: all 1s;  
     transition: all 1s; 
-    opacity:0.9;
+    opacity:0.6;
+    background: #fff;
     filter:alpha(opacity=100);
 }    
 
@@ -401,6 +411,9 @@ content {
 .tr_pr a:nth-last-child(3n+1) {
     margin-right: 0px;
     margin-bottom: 0px;
+}
+.tr_pr a:hover, .ex_p2 a:hover {
+    box-shadow: 1px 2px 9px 2px rgba(33, 33, 33, 0.35);
 }
 
 .hot_deal {
